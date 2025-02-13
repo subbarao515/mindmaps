@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"AI Formatting","children":[{"content":"\n<p data-lines=\"1,2\">Raw</p>","children":[{"content":"Raw text is the simplest form of formatting","children":[],"payload":{"tag":"li","lines":"2,3"}}],"payload":{"tag":"li","lines":"1,3"}},{"content":"\n<p data-lines=\"3,4\">Structured Text</p>","children":[{"content":"basic formatting elements—bulleted and numbered lists, delimiters, markdown","children":[],"payload":{"tag":"li","lines":"4,5"}}],"payload":{"tag":"li","lines":"3,5"}},{"content":"\n<p data-lines=\"5,6\">Formatted Data</p>","children":[{"content":"use various formatting options(JSON, XML, HTML, YAML or other similar format)","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"li","lines":"5,8"}},{"content":"\n<p data-lines=\"8,9\">Prompt Parameters</p>","children":[{"content":"A crucial role in shaping how a language model responds to input","children":[{"content":"Temperature","children":[{"content":"Temperature is a parameter that influences the \"creativity\" and randomness of the AI's output","children":[],"payload":{"tag":"li","lines":"11,12"}}],"payload":{"tag":"li","lines":"10,12"}},{"content":"Max Tokens","children":[{"content":"Max tokens determine the maximum output length of the AI's response.","children":[],"payload":{"tag":"li","lines":"13,14"}}],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"li","lines":"9,14"}}],"payload":{"tag":"li","lines":"8,14"}},{"content":"\n<p data-lines=\"14,15\">Advanced Prompt Parameters</p>","children":[{"content":"API Requests","children":[{"content":"Sampling Parameters","children":[{"content":"allow control of how the model selects tokens for the output.","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"16,18"}},{"content":"Stop sequences","children":[{"content":"specific words, phrases, or characters that signal the model to stop generating text.","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"li","lines":"15,20"}}],"payload":{"tag":"li","lines":"14,20"}},{"content":"\n<p data-lines=\"20,21\">Prompt Tuning Process</p>","children":[{"content":"process of iteratively modifying and improving prompts to better align with specific objectives or requirements","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"20,22"}},{"content":"\n<p data-lines=\"22,23\">Shot-based Prompting Techniques</p>","children":[{"content":"Refers to the number of examples provided to the model in your prompt","children":[{"content":"Zero-Shot","children":[{"content":"Instructing a model to perform a task without providing any examples or demonstrations.","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"24,26"}},{"content":"Few-Shot","children":[{"content":"Instructing a model to perform a task by providing several examples within the prompt.","children":[],"payload":{"tag":"li","lines":"27,28"}}],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"23,28"}}],"payload":{"tag":"li","lines":"22,28"}},{"content":"\n<p data-lines=\"28,29\">Sequential Prompting Techniques</p>","children":[{"content":"Chain-of-Thought","children":[{"content":"This technique where the model is encouraged to break down its reasoning process step-by-step to arrive at an answer.","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"29,31"}},{"content":"Prompt Chaining","children":[{"content":"This technique for breaking down a complex task into a series of smaller, interconnected prompts.","children":[],"payload":{"tag":"li","lines":"32,33"}}],"payload":{"tag":"li","lines":"31,33"}}],"payload":{"tag":"li","lines":"28,33"}},{"content":"\n<p data-lines=\"33,34\">Context-Guiding Prompting Techniques</p>","children":[{"content":"Hint","children":[{"content":"A hint usually consists of a word or phrase that nudges the model in the desired direction or clarifies a particular concept","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"li","lines":"34,36"}},{"content":"Directional Stimulus Prompting (DSP)","children":[{"content":"Uses hints to guide AI responses","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"li","lines":"36,38"}},{"content":"Generate Knowledge Prompting (GKP)","children":[{"content":"Involves asking the LLM to first generate relevant information or knowledge about a topic before answering a specific question or producing the final solution","children":[],"payload":{"tag":"li","lines":"39,40"}}],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"33,40"}},{"content":"\n<p data-lines=\"40,41\">Prompting Best Practices</p>","children":[{"content":"Writing Effective Prompts","children":[{"content":"Clear and Specific Request","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"Keep Focus","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"Input Length","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Use Clear Formatting","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"New Dialogue","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"li","lines":"41,47"}},{"content":"Refining Prompts","children":[{"content":"Regenerate Results","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Rephrase Prompt","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Adjust Components and Parameters","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"Apply Prompt Techniques","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"Dividing Complex Tasks","children":[],"payload":{"tag":"li","lines":"52,55"}}],"payload":{"tag":"li","lines":"47,55"}}],"payload":{"tag":"li","lines":"40,55"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
